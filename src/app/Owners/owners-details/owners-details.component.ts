@@ -15,7 +15,7 @@ export class OwnersDetailsComponent implements OnInit {
               private route: ActivatedRoute) { }
 
   ngOnInit() {
-    const id = +this.route.snapshot.paramMap.get('OwnerId');
+    const id = +this.route.snapshot.paramMap.get('ownerId');
     this.Owner = this.ownerService.getOwnerById(id);
   }
 }

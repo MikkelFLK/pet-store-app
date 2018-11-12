@@ -1,5 +1,5 @@
 export class Owners{
-  OwnerId: number;
-  FirstName: string;
-  LastName: string;
+  ownerId: number;
+  firstName: string;
+  lastName: string;
 }

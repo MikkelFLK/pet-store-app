@@ -15,7 +15,7 @@ export class PetsDetailsComponent implements OnInit {
               private route: ActivatedRoute) { }
 
   ngOnInit() {
-    const id = +this.route.snapshot.paramMap.get('PetId');
+    const id = +this.route.snapshot.paramMap.get('petId');
     this.Pet = this.petService.getPetById(id);
   }
 

@@ -23,14 +23,14 @@ export class OwnersUpdateComponent implements OnInit {
   this.OwnerId = +this.route.snapshot.paramMap.get('OwnerId');
   const owner = this.ownerService.getOwnerById(this.OwnerId);
   this.ownerForm.patchValue({
-    FirstName: owner.FirstName,
-    LastName: owner.LastName
+    FirstName: owner.firstName,
+    LastName: owner.lastName
   });
   }
 
   save() {
     const owners = this.ownerForm.value;
-    owners.OwnerId = this.OwnerId;
+    owners.ownerId = this.OwnerId;
     this.ownerService.updateOwner(owners);
     /*this.ownerForm.reset();
     this.router.navigateByUrl('/owners');*/

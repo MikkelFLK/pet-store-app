@@ -1,9 +1,9 @@
 export class pets{
-  PetId: number;
-  PetName: string;
-  PetType: string;
-  Birthdate: Date;
-  SoldDate: Date;
-  Color: string;
-  Price: number;
+  petId: number;
+  petName: string;
+  petType: string;
+  birthdate: Date;
+  soldDate: Date;
+  color: string;
+  price: number;
 }

@@ -14,6 +14,7 @@ import {ReactiveFormsModule} from '@angular/forms';
 import { PetsAddComponent } from './Pets/pets-add/pets-add.component';
 import { OwnersUpdateComponent } from './Owners/owners-update/owners-update.component';
 import { PetsUpdateComponent } from './Pets/pets-update/pets-update.component';
+import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { PetsUpdateComponent } from './Pets/pets-update/pets-update.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

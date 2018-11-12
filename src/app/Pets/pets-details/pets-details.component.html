@@ -1,13 +1,13 @@
 <button routerLink="/pets">Back</button>
 <h1>Pet Details</h1>
 <div *ngIf="Pet">
-  <h2>{{Pet.PetId}}</h2>
-  <h3>{{Pet.PetName}}</h3>
-  <h3>{{Pet.PetType}}</h3>
-  <h3>{{Pet.Birthdate}}</h3>
-  <h3>{{Pet.SoldDate}}</h3>
-  <h3>{{Pet.Color}}</h3>
-  <h3>{{Pet.Price}}</h3>
+  <h2>{{Pet.petId}}</h2>
+  <h3>{{Pet.petName}}</h3>
+  <h3>{{Pet.petType}}</h3>
+  <h3>{{Pet.birthdate}}</h3>
+  <h3>{{Pet.soldDate}}</h3>
+  <h3>{{Pet.color}}</h3>
+  <h3>{{Pet.price}}</h3>
 </div>
 <div *ngIf="!Pet">
   <h2>Pet not found</h2>

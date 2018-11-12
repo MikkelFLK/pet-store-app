@@ -28,18 +28,18 @@ export class PetsUpdateComponent implements OnInit {
     this.PetId = +this.route.snapshot.paramMap.get('PetId');
     const pet = this.petService.getPetById(this.PetId);
     this.petForm.patchValue({
-      PetName: pet.PetName,
-      PetType: pet.PetType,
-      Birthdate: pet.Birthdate,
-      SoldDate: pet.SoldDate,
-      Color: pet.Color,
-      Price: pet.Price
+      PetName: pet.petName,
+      PetType: pet.petType,
+      Birthdate: pet.birthdate,
+      SoldDate: pet.soldDate,
+      Color: pet.color,
+      Price: pet.price
     });
   }
 
   save() {
     const pets = this.petForm.value;
-    pets.PetId = this.PetId;
+    pets.petId = this.PetId;
     this.petService.updatePet(pets);
   }
 
