@@ -1,0 +1,8 @@
+<ul>
+  <li *ngFor="let pet of Pets">
+    <a routerLink="/pets/{{pet.PetId}}">{{pet.PetName}} {{pet.PetType}} {{pet.Birthdate}} {{pet.SoldDate}} {{pet.Color}}</a>
+    <button routerLink="/pets-update/{{pet.PetId}}">Update</button>
+    <button (click)="delete(pet.PetId)">Delete</button>
+  </li>
+</ul>
+<button routerLink="/pets-add">Add Pet</button>
