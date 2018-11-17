@@ -1,10 +1,10 @@
 <button routerLink="/owners">Back</button>
 <h1>Owner Details</h1>
-<div *ngIf="Owner">
-  <h2>{{Owner.ownerId}}</h2>
-  <h3>{{Owner.firstName}}</h3>
-  <h4>{{Owner.lastName}}</h4>
+<div *ngIf="owner">
+  <h2>{{owner.ownerId}}</h2>
+  <h3>{{owner.firstName}}</h3>
+  <h4>{{owner.lastName}}</h4>
 </div>
-<div *ngIf="!Owner">
+<div *ngIf="!owner">
 <h2>Owner not found</h2>
 </div>

@@ -10,12 +10,12 @@ import {ActivatedRoute} from '@angular/router';
 })
 export class OwnersDetailsComponent implements OnInit {
 
-  Owner: Owners;
+  owner: Owners;
   constructor(private  ownerService: OwnerService,
               private route: ActivatedRoute) { }
 
   ngOnInit() {
     const id = +this.route.snapshot.paramMap.get('ownerId');
-    this.Owner = this.ownerService.getOwnerById(id);
+    this.owner = this.ownerService.getOwnerById(id);
   }
 }

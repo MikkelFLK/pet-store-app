@@ -15,6 +15,9 @@ import { PetsAddComponent } from './Pets/pets-add/pets-add.component';
 import { OwnersUpdateComponent } from './Owners/owners-update/owners-update.component';
 import { PetsUpdateComponent } from './Pets/pets-update/pets-update.component';
 import {HttpClientModule} from '@angular/common/http';
+import {FlexLayoutModule} from '@angular/flex-layout';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {MatButtonModule, MatCardModule, MatProgressSpinnerModule} from '@angular/material';
 
 @NgModule({
   declarations: [
@@ -34,7 +37,12 @@ import {HttpClientModule} from '@angular/common/http';
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    FlexLayoutModule,
+    BrowserAnimationsModule,
+    MatButtonModule,
+    MatCardModule,
+    MatProgressSpinnerModule
   ],
   providers: [],
   bootstrap: [AppComponent]
